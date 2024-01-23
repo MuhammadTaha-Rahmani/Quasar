@@ -19,8 +19,9 @@
     </div>
     <q-img src="../assets/wave.svg" style="transform:translateY(1px);"/>
     <div class="bg-secondary q-py-xl">
+      <h3 class="text-center q-mt-none q-mb-xl text-positive">راهنمای استفاده</h3>
       <div class="row justify-center q-gutter-lg text-center">
-        <div class="col-sm-4 glass">
+        <div class="col-sm-5 q-pa-md glass">
           <h3 class="text-h4 text-positive q-mb-4">ارتباط مستقیم</h3>
           <p class="text-color">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -29,7 +30,7 @@
             کاربردهای
           </p>
         </div>
-        <div class="col-sm-4 q-mx-2 glass">
+        <div class="col-sm-5 q-mx-2 q-pa-md glass">
           <h3 class="text-h4 text-positive q-mb-4">ارتباط مستقیم</h3>
           <p class="">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -38,7 +39,7 @@
             کاربردهای
           </p>
         </div>
-        <div class="col-sm-5 glass">
+        <div class="col-sm-5 q-pa-md glass">
           <h3 class="text-h4 text-positive q-mb-4">ارتباط مستقیم</h3>
           <p class="text-color">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -49,6 +50,7 @@
         </div>
       </div>
     </div>
+
   </q-page>
 </template>
 
@@ -60,13 +62,5 @@ export default defineComponent({
 });
 </script>
 <style>
-.glass {
-  /* From https://css.glass */
-  background: transparent;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
+
 </style>
