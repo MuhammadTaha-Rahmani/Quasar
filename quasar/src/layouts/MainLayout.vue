@@ -1,13 +1,21 @@
 <template>
   <q-layout view="hHh lpr fFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-white text-light-blue-8">
         <q-toolbar-title>
           <h1 class="text-h6">یوک بار</h1>
         </q-toolbar-title>
         <div class="absolute-center">
-          <q-btn to="/" flat color="grey-3" rounded icon="home">
-            <q-tooltip class="bg-accent">خانه</q-tooltip>
+          <q-btn
+            v-for="nav in navs"
+            :to="nav.to"
+            flat
+            color="light-blue-4"
+            rounded
+            :icon="nav.icon"
+            :key="nav.key"
+          >
+            <q-tooltip class="bg-blue-8 shadow-10">{{nav.tooltip}}</q-tooltip>
           </q-btn>
         </div>
 
@@ -24,7 +32,35 @@
   </q-layout>
 </template>
 
-<script></script>
+<script>
+import { defineComponent, reactive } from "vue";
+export default defineComponent({
+  setup() {
+    const navs = reactive([
+      {
+        icon: "home",
+        tooltip: "خانه",
+        to: "/",
+        key: "1",
+      },
+      {
+        icon: "work",
+        tooltip: "کار",
+        to: "/",
+        key: "2",
+      },{
+        icon: "message",
+        tooltip: "گفت و گو",
+        to: "/signup",
+        key: "3",
+      }
+    ]);
+    return {
+      navs,
+    };
+  },
+});
+</script>
 <style>
 .glass {
   /* From https://css.glass */
