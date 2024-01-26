@@ -50,7 +50,24 @@
         </div>
       </div>
     </div>
-
+    <div class="row text-primary text-center q-py-lg q-gutter-lg justify-center">
+      <div class="glass q-pa-lg col-5">
+        <q-icon name="person"/>
+        <p data-goal="">0</p>
+      </div>
+      <div class="glass q-pa-lg col-5">
+        <q-icon name="work"/>
+        <p data-goal="">0</p>
+      </div>
+      <div class="glass q-pa-lg col-5">
+        <q-icon name="login"/>
+        <p data-goal="">0</p>
+      </div>
+      <div class="glass q-pa-lg col-5">
+        <q-icon name="person"/>
+        <p data-goal="">0</p>
+      </div>
+    </div>
   </q-page>
 </template>
 
@@ -62,5 +79,7 @@ export default defineComponent({
 });
 </script>
 <style>
-
+ .gradient{
+  
+ }
 </style>
