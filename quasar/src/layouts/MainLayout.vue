@@ -10,6 +10,7 @@
             v-for="nav in navs"
             :to="nav.to"
             flat
+            class="gt-xs"
             color="light-blue-4"
             rounded
             :icon="nav.icon"

@@ -17,7 +17,7 @@
         راهنمای استفاده
       </h3>
       <div class="row justify-center q-gutter-lg text-center">
-        <div class="col-sm-5  col-11 q-pa-md glass">
+        <div class="col-sm-5 col-11 q-pa-md glass">
           <h3 class="text-h4 text-positive q-mb-4">ارتباط مستقیم</h3>
           <p class="text-color">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -47,12 +47,12 @@
       </div>
     </div>
     <div
-      class="row text-primary justify-center text-center q-py-lg q-gutter-xl justify-center"
+     class="row text-primary justify-center text-center q-py-lg q-gutter-xl justify-center"
     >
       <div
         :key="sectionIcon.key"
         v-for="sectionIcon in sectionIcons"
-        class="glass q-pa-lg col-10 col-sm-4 "
+        class="glass q-pa-lg col-10 col-sm-4"
       >
         <q-icon :name="sectionIcon.name" size="60px" />
         <p class="text-h5 text-indigo-5">{{ sectionIcon.title }}</p>
@@ -66,7 +66,7 @@
 
 <script>
 import { defineComponent, reactive } from "vue";
-
+import { useQuasar } from "quasar";
 export default defineComponent({
   name: "IndexPage",
   setup() {
