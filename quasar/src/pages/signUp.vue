@@ -1,11 +1,11 @@
 <template>
-  <q-page>
+  <q-page class="my-font">
     <div class="row items-center justify-evenly q-my-xl">
       <div class="col-md-5 col-11">
         <div class="glass shadow-24 column q-gutter-y-lg q-pa-xl">
           <h3 class="q-mt-none q-mb-lg text-center text-primary">عضویت</h3>
           <p class="text-center q-my-none">
-            قبلا ثبت نام کزده اید ؟ <span class="text-primary">ورود</span>
+            قبلا ثبت نام کرده اید ؟<span class="text-primary"> ورود</span>
           </p>
           <q-input standout="bg-primary text-white" label="نام">
             <template v-slot:prepend>

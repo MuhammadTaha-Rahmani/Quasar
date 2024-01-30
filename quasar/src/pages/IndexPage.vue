@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="my-font">
     <div class="row q-my-xl">
       <div class="col text-center">
         <h2 class="text-h3 text-primary">یوک بار چیست ؟</h2>
@@ -47,7 +47,7 @@
       </div>
     </div>
     <div
-     class="row text-primary justify-center text-center q-py-lg q-gutter-xl justify-center"
+      class="row text-primary justify-center text-center q-py-lg q-gutter-xl justify-center"
     >
       <div
         :key="sectionIcon.key"
@@ -66,7 +66,6 @@
 
 <script>
 import { defineComponent, reactive } from "vue";
-import { useQuasar } from "quasar";
 export default defineComponent({
   name: "IndexPage",
   setup() {

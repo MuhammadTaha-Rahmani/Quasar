@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpr fFf">
     <q-header elevated>
-      <q-toolbar class="bg-white text-light-blue-8">
+      <q-toolbar class="my-font bg-white text-light-blue-8">
         <q-toolbar-title>
           <h1 class="text-h6">یوک بار</h1>
         </q-toolbar-title>
@@ -47,12 +47,12 @@ export default defineComponent({
       {
         icon: "work",
         tooltip: "کار",
-        to: "/",
+        to: "/signup",
         key: "2",
       },{
         icon: "message",
         tooltip: "گفت و گو",
-        to: "/signup",
+        to: "/opinion",
         key: "3",
       }
     ]);
